@@ -39,9 +39,7 @@
 
 ## What This Does
 
-<!-- Your community, and what your classifier sorts posts into. Three or four
-     sentences. -->
-
+TakeMeter sorts posts from the Smogon competitive Pokemon forums (mostly tier-shift, tiering-policy, and metagame threads) by how well a post backs up what it says. Each post is labeled `analysis` (an opinion backed by something checkable), `hot_take` (a confident claim with no checkable support), or `chatter` (social or reaction posts that make no claim about the game). The goal is to tell a reasoned argument from a bare opinion regardless of tone. A fine-tuned DistilBERT does the sorting, and I compare it against a zero-shot baseline.
 
 
 ---
