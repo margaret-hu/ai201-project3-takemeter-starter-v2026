@@ -52,33 +52,52 @@ TakeMeter sorts posts from the Smogon competitive Pokemon forums (mostly tier-sh
      The decision rule is worth a point on its own and it's the thing most
      people leave out. Every taxonomy has a hardest boundary. Name yours. -->
 
-### `label_one`
+### `analysis`
 
-**Definition:**
-
-**Example 1:**
->
-
-**Example 2:**
->
-
-### `label_two`
-
-**Definition:**
+**Definition:** an opinion about Pokemon, tiers, or tiering policy backed by something checkable (a usage stat, a named matchup result, a mechanic, a rule or vote outcome); the evidence must support the post's main claim, not merely be its topic
 
 **Example 1:**
->
+> SnackWasTaken said: Now I have proof that Basculegion is overrated Basculegion is overrated Basculegion is overrated Basculegion is overrated Come on, it even fell to UU. That's gotta say something, right? Click to expand... It says that mons with 2 forms which are basically equivalent get hurt by the 4.52% threshold. The sum of their usage is higher than 5% in any case
 
 **Example 2:**
->
+> Power Panpour said: I have no idea how people gaslit themselves into thinking Thwackey was THAT good. At the beginning of the HOME meta I could understand cuz of new toy syndrome, but after the Teal Mask I had no clue why people were still using that awful thing. Click to expand... I think it's a bit disingenuous to say that people gaslit themselves into thinking thwackey was good, given that it was banned to NUBL by suspect . a month and a bit later grassy surge was banned which was the only reason for thwackey's unban and subsequent drop.
+
+### `hot_take`
+
+**Definition:** a confident claim or judgment about the game, its tiers, or its rules and formats with no checkable support; general reasons ("it's stupid", "it's deadweight") don't count as support
+
+**Example 1:**
+> Kingambit being top 3 in the current OU meta and top 1 in National dex. I have never doubt our supreme overlord
+
+**Example 2:**
+> HydreigonTheChild said: OU is never giving us dondozo, its the arcanine, forretrress, donphan of UU Click to expand... Least Donphan isn't totally terrible in UU and has some applications. Dozo just is mid af and should've dropped ages ago but somehow it's held on by a thread Don't even understand why either. Not exactly a popular Mon like Garchomp in terms of fans, and it isn't exactly flashy since it's a stall staple mostly, and low ladder isn't exactly where you see stall often.
+
+### `chatter`
+
+**Definition:** social or immediate-reaction posts that make no claim about the game, its tiers, or its rules: thanks, jokes, hype, venting, remarks about your own games or ladder run
+
+**Example 1:**
+> omg tysm for the noms/votes in these two categories and no other categories as i definitely DID NOT win anything else ok but fr literally all 7 of those ppl contribute more to the discord than me, they were robbed LOL
+
+**Example 2:**
+> TheMantyke said: So when do I get my prize money for being the last one on the Orange Islands? This is like Survivor, right? I never did get to use my immunity Amulet Coin. Click to expand... nah this is hunger games and now that u have ur sponsors the fun part is about to begin
 
 ### The hardest boundary
 
-**Which two labels:**
+**Which two labels:** `analysis` and `hot_take`
 
 **The decision rule I used every time:**
-<!-- e.g. "If the post names a specific checkable fact, it's `analysis`, even
-     if the tone is heated." -->
+If the post names something specific that someone else could check (a stat, a rule or mechanic, a named matchup, a vote result) and the argument depends on it, it is `analysis`, even if the tone is heated. Otherwise it is `hot_take`, even if the tone is calm.
+
+**Calm but `hot_take`:**
+> boulder being ass is really not what i expected. i guess all its offensive traits couldn't make up for it effectively being deadweight into bulkier teams and having very, VERY little defensive utility
+
+It gives reasons, but none can be checked against a number, a mechanic, or a named matchup.
+
+**Heated but `analysis`:**
+> How are people still saying Treads should be in UU, home made it a lot better since it can 1v1 the common heatwaveless Zapdos and spin on it which Tusk cannot do for example. It's better speed tier also helps it find a niche on HO as a decent spinner as well as still carrying the utility of knock off that Tusk has. The time for Treads slander has to stop, it is no longer the OU equivalent of UU holding on to Forretress.
+
+The tone is annoyed, but the argument rests on a named matchup (Treads vs. heatwaveless Zapdos), a speed-tier comparison, and a specific move (Knock Off).
 
 
 
@@ -89,45 +108,46 @@ TakeMeter sorts posts from the Smogon competitive Pokemon forums (mostly tier-sh
 <!-- Where you collected from, how you labelled, your counts, and three hard
      cases. -->
 
-**Where the posts came from:**
+**Where the posts came from:** 200 public posts from the Smogon competitive Pokemon forums, collected with a script (Playwright plus BeautifulSoup) in [`data_collection/`](data_collection/). The scraper ([`smogon_scraper.py`](data_collection/smogon_scraper.py)) samples threads by type, tier and age and skips off-topic ones. A filter ([`inscope.py`](data_collection/inscope.py)) and [`subsample.py`](data_collection/subsample.py) then keep posts that can take one of the three labels and draw the final 200. They came from 12 threads, mostly tier-update threads, so the dataset leans toward tier-shift discussion. [`labels_ids.csv`](labels_ids.csv) records the post ID and permalink for every row of [`labels.csv`](labels.csv).
 
-**How I labelled them:** <!-- Cold first? Pre-labelled with AI and corrected?
-Say so plainly — the disclosure is required, not penalised. -->
+**How I labelled them:** I labelled in an interactive session with Claude Code, and `labels_ids.csv` records how each row was labelled:
+
+- **20 posts cold.** I labelled these myself before seeing any AI suggestion.
+- **180 posts pre-labelled by Claude Code.** I reviewed every one. I agreed with 172, so they keep the AI's label, and I changed the label on 8 (`corrected` in `labels_ids.csv`). Of the 8, the AI had said `analysis` for 4, `hot_take` for 3 and `chatter` for 1.
+
+Because 172 labels are the AI's judgment that I accepted, the model is partly learning Claude's reading of my label definitions.
 
 **Counts per label:**
 
 | Label | Count | Share |
 |---|---|---|
-|  |  |  |
-|  |  |  |
-|  |  |  |
-| **Total** |  | 100% |
+| `analysis` | 54 | 27.0% |
+| `hot_take` | 61 | 30.5% |
+| `chatter` | 85 | 42.5% |
+| **Total** | 200 | 100% |
 
 **Three hard cases**
 
-<!-- Any post that made you pause: what it was, which two labels it could have
-     been, and what you chose. These are worth more than the easy 190. -->
-
 **1.**
-> *The post:*
+> *The post:* "So... taking pokemon from a tier because it has high usage in the tier above is not allowed because it would impact the former, i get it. But the same happens if pokemon are allowed to drop from the tier above. Not letting, lets say, Latios rise to OU because it would shake UU makes sense, but letting Heatran and Tyranitar drop from OU affects UU in a similar way, it changes the meta. I dont get this tiering decision."
 >
-> *Could have been:*
+> *Could have been:* `analysis` or `hot_take`
 >
-> *I chose, because:*
+> *I chose* `hot_take`*, because:* it is a calm, structured argument and Claude Code labelled it `analysis`, but nothing in it can be checked. It names Pokemon and a tiering rule, but gives no usage figure, vote result or matchup. The argument is a comparison between two policies, and the conclusion is "I don't get this tiering decision".
 
 **2.**
-> *The post:*
+> *The post:* "I'm sorta going back on the entire "we should ban Regidrago" right now... I don't think that time is now, when we have Pokemon that I see as broken running around. Iron Crown's finally getting more use than just the Weakness Policy set... Booster Energy: Special Attack sets are incredibly good right now... there's just not that much in terms of reliable counterplay to Iron Crown, especially since setguessing can be a bit challenging due to how many matchups each set can just win with Tachyon Cutter... a look at the VR can probably tell you how many matchups this Pokemon can cover with juts a few sets."
 >
-> *Could have been:*
+> *Could have been:* `hot_take` or `analysis`
 >
-> *I chose, because:*
+> *I chose* `analysis`*, because:* Claude Code labelled it `hot_take` because it opens with a confident opinion and the writer says they won't go into detail. The argument is built on named sets and a named move (Tachyon Cutter), and the viability rankings are cited as a place to check it. That is support someone else could check, and it backs the main claim that Iron Crown is the more urgent problem.
 
 **3.**
-> *The post:*
+> *The post:* "What are your thoughts on the inevitable return of blaziken and serperior? I know serperior has always had issues with coverage and blaziken has always had severe 4mss and got walled hard by the bulky waters, but blaziken to me feels like its just going to be chi-yu/ogerpon-hearthstone v2.0, but stronger thanks to tera and much harder to revenge kill thanks to speed boost and the fact that most of the bulky waters got nerfed hard this gen too, oh and serperior just nukes everything with its multiple viable tera sets... Is there any preemptive talk right now in the council about whether or not a vote will need to be held..."
 >
-> *Could have been:*
+> *Could have been:* `analysis` or `hot_take`
 >
-> *I chose, because:*
+> *I chose* `hot_take`*, because:* Claude Code labelled it `analysis` because it is full of specifics (4MSS, Speed Boost, Tera sets, nerfed bulky waters). Those specifics describe the mechanics, but they support a prediction ("inevitable return", "v2.0, but stronger"). No usage result or tested matchup backs the claim that these two will be broken. The mechanics are only the topic, which my rule says is not enough.
 
 ---
 
@@ -158,11 +178,11 @@ of next unit's variance. -->
      workflow and disclosing it costs you nothing. Not disclosing it is the
      problem. -->
 
-**Moment 1**
+**Moment 1: checking the scraped data against my sampling plan**
 
-- *What I asked for:*
-- *What came back:*
-- *What I changed:*
+- *What I asked for:* Whether my scraped pool covered my sampling plan, checked again after I revised the plan and re-scraped.
+- *What came back:* No, both times. The first pool had 564 posts from 12 threads (plan: 25–35), no RMT threads because my `inscope.py` filter drops them, and only 28% recent posts. After the revised plan and a first re-scrape, a leftover post limit in Claude's scraper edit stopped the scrape at 14 of 28 threads. After my second re-scrape, the pool has 752 posts from 19 threads and subsamples to 175 posts, with 49% recent but no Doubles/VGC threads.
+- *What I changed:* I dropped the RMT quota and rewrote the plan around opinion-bearing threads, then approved the scraper and `subsample.py` changes (10 posts per thread max). Still to do: add Doubles/VGC and viability threads to reach 28 threads and 200 posts.
 
 **Moment 2**
 

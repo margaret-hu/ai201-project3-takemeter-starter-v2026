@@ -5,6 +5,6 @@
 #
 # Delete the examples below and put yours in.
 
-analysis: makes an argument backed by a specific, checkable fact
-hot_take: a confident claim with no support offered
-reaction: an immediate response to something that just happened
+analysis: an opinion about Pokemon, tiers, or tiering policy backed by something checkable (a usage stat, a named matchup result, a mechanic, a rule or vote outcome); the evidence must support the post's main claim, not merely be its topic
+hot_take: a confident claim or judgment about the game, its tiers, or its rules and formats with no checkable support; general reasons ("it's stupid", "it's deadweight") don't count as support
+chatter: social or immediate-reaction posts that make no claim about the game, its tiers, or its rules: thanks, jokes, hype, venting, remarks about your own games or ladder run
