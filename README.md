@@ -157,16 +157,24 @@ Because 192 labels are the AI's judgment that I kept, most of them unreviewed, t
 
 <!-- Your starting model, your settings, and anything you changed and why. -->
 
-**Base model:**
+**Base model:** `distilbert-base-uncased`, fine-tuned for 3-way classification (`analysis`, `hot_take`, `chatter`) with the training notebook [`takemeter.ipynb`](takemeter.ipynb).
 
-**Settings:** <!-- epochs, learning rate, batch size, seed -->
+**Settings:** 3 epochs, learning rate 2e-5, batch size 16, max length 128 tokens, seed 42. I trained on CPU (torch 2.14.1+cpu), and `results.json` records this.
 
-**Anything I changed from the defaults, and why:**
+**Anything I changed from the defaults, and why:** Nothing. I kept the notebook's defaults for every setting. I had no evidence yet to justify changing any of them, and I wanted the first run to be a baseline I could improve against later.
 
-**Split sizes:** <!-- train / val / test, and per-label counts in the test
-split. If a label had fewer than about 8 in test, say so — it explains a lot
-of next unit's variance. -->
+**Split sizes:** a stratified 70/15/15 split of the 225 posts, which gives 157 train, 34 validation and 34 test. Per-label counts in the test split:
 
+| Label | Test count |
+|---|---|
+| `analysis` | 10 |
+| `hot_take` | 10 |
+| `chatter` | 14 |
+| **Total** | 34 |
+
+No label falls below 8 in the test split, but 10 posts per label is still small. One post moves a per-label score by 10 points (for `analysis` or `hot_take`), so I expect the numbers to move between seeds.
+
+**Result of this run (seed 42):** accuracy 0.588, macro F1 0.483. `chatter` did best (F1 0.757, recall 1.00). `hot_take` did worst (F1 0.167, 1 of 10 correct). The model's confidence barely separated right answers from wrong ones (mean 0.39 when right, 0.38 when wrong). I haven't interpreted these numbers yet. That is for the baseline comparison and the three-seed run.
 
 
 ---
