@@ -191,16 +191,16 @@ No label falls below 8 in the test split, but 10 posts per label is still small.
 **Moment 1: checking the scraped data against my sampling plan**
 
 - *What I asked for:* Whether my scraped pool covered my sampling plan, checked again after I revised the plan and re-scraped.
-- *What came back:* No, both times. The first pool had 564 posts from 12 threads (plan: 25–35), no RMT threads because my `inscope.py` filter drops them, and only 28% recent posts. After the revised plan and a first re-scrape, a leftover post limit in Claude's scraper edit stopped the scrape at 14 of 28 threads. After my second re-scrape, the pool has 752 posts from 19 threads and subsamples to 175 posts, with 49% recent but no Doubles/VGC threads.
-- *What I changed:* I dropped the RMT quota and rewrote the plan around opinion-bearing threads, then approved the scraper and `subsample.py` changes (10 posts per thread max). Still to do: add Doubles/VGC and viability threads to reach 28 threads and 200 posts.
+- *What came back:* No, both times. The first pool had 564 posts from only 12 threads (plan: 25–35), no RMT threads because my `inscope.py` filter drops them, and few recent posts. After my revised plan, a leftover post limit in Claude's scraper edit stopped the re-scrape at 14 of 28 threads. The final pool has 752 posts from 19 threads, but no Doubles/VGC threads.
+- *What I changed:* I dropped the RMT quota, rewrote the plan around opinion-bearing threads, and approved the scraper and `subsample.py` changes (10 posts per thread max). I never reached the plan's 28 threads or any Doubles/VGC threads. Instead I added 25 posts from 6 other thread types (viability rankings, metagame discussion, suspect tests, council), which brought the final set to 225 posts from 18 threads.
 
-**Moment 2**
+**Moment 2: pre-labelling the posts with Claude Code**
 
-- *What I asked for:*
-- *What came back:*
-- *What I changed:*
+- *What I asked for:* To label every post using my Label Taxonomy, with the note set to `pre-labeled` (the first 20 were my own `cold` labels).
+- *What came back:* A label for each post. Claude flagged 35 as `pre-labeled; unsure`, "my least confident calls."
+- *What I changed:* I reviewed only those 35. I removed `; unsure` where I agreed. Where I disagreed, I changed the label and noted `corrected pre-label (was hot_take)`. I didn't check the rest because of time.
 
-**Pre-labelling disclosure:**
+**Pre-labelling disclosure:** 20 labels are mine (`cold`). Claude pre-labelled the other 205. I reviewed only its `unsure` calls and corrected 13 labels. The other 192 are unreviewed or confirmed `unsure` posts, so many labels reflect Claude's reading of my definitions.
 
 <!-- ═══════════════════════ UNIT 6 — THE TEST ═══════════════════════
 
