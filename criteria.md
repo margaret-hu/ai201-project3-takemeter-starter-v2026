@@ -51,63 +51,33 @@ whether you hit them:
 
 ---
 
-## 1.
+## 1. `analysis` F1 of at least 0.55 on all three seeds
 
-<!-- Your criterion. It must name a number. -->
-
-
-
-**Why this target:**
-
-
+**Why this target:** `analysis` is my smallest label (66 posts) with only 10 in the 34-post test split, so one post moves F1 by about 0.1. That is why this target is looser than `chatter`'s.
 
 ---
 
-## 2.
+## 2. `hot_take` F1 of at least 0.55 on all three seeds
 
-<!-- Your criterion. -->
-
-
-
-**Why this target:**
-
-
+**Why this target:** `hot_take` has 68 posts and 10 in the test split, as thin as `analysis`, so it gets the same target. It shares the hard boundary with `analysis`, where noise is highest.
 
 ---
 
-## 3.
+## 3. `chatter` F1 of at least 0.75 on all three seeds
 
-<!-- Your criterion. -->
-
-
-
-**Why this target:**
-
-
+**Why this target:** `chatter` is my largest label (91 posts) with 14 test posts, so its score is the steadiest. These posts make no claim about the game, so they should be the easiest to spot.
 
 ---
 
-## 4.
+## 4. Overall accuracy of at least 0.65 on all three seeds
 
-<!-- Your criterion. -->
-
-
-
-**Why this target:**
-
-
+**Why this target:** Always guessing `chatter` scores 40.4%, so 0.65 is over 24 points above that. I didn't go higher because each of the 34 test posts is 2.9 points, so a 0.10 swing between seeds is only 3 posts.
 
 ---
 
-## 5.
+## 5. At least 23 of 30 (77%) agreement with the staff set
 
-<!-- Your criterion. -->
-
-
-
-**Why this target:**
-
-
+**Why this target:** 192 of my 225 labels are Claude's judgment that I accepted, so only the staff set can show whether I apply my own rules consistently. About three in four is realistic because the staff set includes ambiguous posts on purpose.
 
 ---
 
