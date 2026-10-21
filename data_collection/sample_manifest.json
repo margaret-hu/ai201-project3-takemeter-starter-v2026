@@ -1,0 +1,1034 @@
+{
+  "seed": 123,
+  "created_at": "2026-10-19T09:40:16.625752+00:00",
+  "target_posts": 200,
+  "target_threads": 28,
+  "sampling_plan": {
+    "per_thread_type_proportions": {
+      "Council": 0.35,
+      "Viability": 0.35,
+      "Community": 0.3
+    },
+    "tier_proportions": {
+      "OU": 0.3,
+      "Doubles/VGC": 0.2,
+      "Lower tiers": 0.25,
+      "Other": 0.25
+    },
+    "recent_share": 0.5,
+    "raw_per_thread": 15,
+    "min_thread_posts": 12
+  },
+  "sampled_threads": [
+    {
+      "thread_url": "https://www.smogon.com/forums/threads/the-new-council.3762539/",
+      "thread_title": "Announcement The New Council",
+      "thread_type": "Council",
+      "tier": "OU",
+      "is_recent": true,
+      "total_posts_estimated": 75,
+      "pages_fetched": [
+        1,
+        2,
+        3
+      ],
+      "cached_pages": {
+        "1": {
+          "path": "cache_smogon_v2\\thread-eb1fff93955c-page-1.html",
+          "sha1": "9066ae8ad6b85b9581070e7d1e51f84d46dda4f1"
+        },
+        "2": {
+          "path": "cache_smogon_v2\\thread-eb1fff93955c-page-2.html",
+          "sha1": "53e14d3057947a514220b0c80394b5982557422b"
+        },
+        "3": {
+          "path": "cache_smogon_v2\\thread-eb1fff93955c-page-3.html",
+          "sha1": "426769434c1a6b9692993fc0fd6554c94f18565f"
+        }
+      },
+      "selected_indices_planned": [
+        1,
+        2,
+        3,
+        5,
+        16,
+        20,
+        26,
+        35,
+        36,
+        39,
+        41,
+        48,
+        51,
+        62,
+        68
+      ],
+      "selected_indices_written": [
+        1,
+        2,
+        3,
+        6,
+        12,
+        13,
+        30,
+        31,
+        33,
+        36,
+        38,
+        39,
+        40,
+        42,
+        54
+      ],
+      "thread_rng_seed": 1527348396
+    },
+    {
+      "thread_url": "https://www.smogon.com/forums/threads/usage-based-tier-update-for-april-2026-may-47-june-61.3779997/",
+      "thread_title": "Data Usage-Based Tier Update for April 2026 (May @ #47) (June @ #61)",
+      "thread_type": "Council",
+      "tier": "Other",
+      "is_recent": true,
+      "total_posts_estimated": 100,
+      "pages_fetched": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "cached_pages": {
+        "1": {
+          "path": "cache_smogon_v2\\thread-45057927dbfd-page-1.html",
+          "sha1": "88e7f1a8ef91dcd329745df028c72cd33373d2bb"
+        },
+        "2": {
+          "path": "cache_smogon_v2\\thread-45057927dbfd-page-2.html",
+          "sha1": "3ab9f35a34027cab36fde09ea1eb431a2e819d1d"
+        },
+        "3": {
+          "path": "cache_smogon_v2\\thread-45057927dbfd-page-3.html",
+          "sha1": "09a5bbdb5c75e98c40dcdd86f32e1c2f8d384e3b"
+        },
+        "4": {
+          "path": "cache_smogon_v2\\thread-45057927dbfd-page-4.html",
+          "sha1": "d35ba6340b1d5ee9223d25b8f88956f650acccb3"
+        }
+      },
+      "selected_indices_planned": [
+        1,
+        2,
+        3,
+        23,
+        25,
+        34,
+        45,
+        50,
+        53,
+        64,
+        68,
+        70,
+        84,
+        92,
+        99
+      ],
+      "selected_indices_written": [
+        1,
+        2,
+        3,
+        7,
+        8,
+        12,
+        19,
+        21,
+        22,
+        24,
+        59,
+        61,
+        68,
+        71,
+        81
+      ],
+      "thread_rng_seed": 192278002
+    },
+    {
+      "thread_url": "https://www.smogon.com/forums/threads/volcarona-retest-%E2%80%94-qualified-discussion.3782047/",
+      "thread_title": "Volcarona Retest — Qualified Discussion",
+      "thread_type": "Council",
+      "tier": "OU",
+      "is_recent": true,
+      "total_posts_estimated": 14000,
+      "pages_fetched": [
+        1,
+        173,
+        189,
+        285,
+        322,
+        373,
+        374,
+        377,
+        503,
+        506,
+        520,
+        546,
+        552
+      ],
+      "cached_pages": {
+        "1": {
+          "path": "cache_smogon_v2\\thread-b9cbb0203dcd-page-1.html",
+          "sha1": "6cc305f156c2e7b76506ba682d74d900e0b9cb5f"
+        },
+        "173": {
+          "path": "cache_smogon_v2\\thread-b9cbb0203dcd-page-173.html",
+          "sha1": "160d9199069c513a940a9f2cd35640101c6443b8"
+        },
+        "189": {
+          "path": "cache_smogon_v2\\thread-b9cbb0203dcd-page-189.html",
+          "sha1": "644f7bf04d8efb736b2960a0c8293eb2c2f0e7f5"
+        },
+        "285": {
+          "path": "cache_smogon_v2\\thread-b9cbb0203dcd-page-285.html",
+          "sha1": "37dcfea5fd035615eaafbdc608fecac54ac34e0e"
+        },
+        "322": {
+          "path": "cache_smogon_v2\\thread-b9cbb0203dcd-page-322.html",
+          "sha1": "9cca80ef9fa2f0069a121f0960a69001d056e77a"
+        },
+        "373": {
+          "path": "cache_smogon_v2\\thread-b9cbb0203dcd-page-373.html",
+          "sha1": "9d8a41f5affa7fbdaba4576a6c8f7956c02fa73b"
+        },
+        "374": {
+          "path": "cache_smogon_v2\\thread-b9cbb0203dcd-page-374.html",
+          "sha1": "b306438854b7c18df487ea9c5a35e605b91f0da6"
+        },
+        "377": {
+          "path": "cache_smogon_v2\\thread-b9cbb0203dcd-page-377.html",
+          "sha1": "f67a973a5914653718ab27d522681567b7af65aa"
+        },
+        "503": {
+          "path": "cache_smogon_v2\\thread-b9cbb0203dcd-page-503.html",
+          "sha1": "c740ff117a6e3b9609ab84ed1ea97fbc623d83ef"
+        },
+        "506": {
+          "path": "cache_smogon_v2\\thread-b9cbb0203dcd-page-506.html",
+          "sha1": "fe63123d955721a267858b8ca66eee95ef78fa19"
+        },
+        "520": {
+          "path": "cache_smogon_v2\\thread-b9cbb0203dcd-page-520.html",
+          "sha1": "bd9d8b5c068f32429a2f4f942877848706406c16"
+        },
+        "546": {
+          "path": "cache_smogon_v2\\thread-b9cbb0203dcd-page-546.html",
+          "sha1": "e4670c66a6e02c694f8e717ed85d31df32acb1bb"
+        },
+        "552": {
+          "path": "cache_smogon_v2\\thread-b9cbb0203dcd-page-552.html",
+          "sha1": "319172cd84ab8262ecbdfa20bb0049a16faad1c3"
+        }
+      },
+      "selected_indices_planned": [
+        1,
+        2,
+        3,
+        4304,
+        4702,
+        7112,
+        8036,
+        9305,
+        9332,
+        9409,
+        12558,
+        12627,
+        12989,
+        13632,
+        13789
+      ],
+      "selected_indices_written": [
+        1,
+        2,
+        3,
+        45,
+        94,
+        96,
+        97,
+        100,
+        124,
+        127,
+        134,
+        170,
+        172,
+        185,
+        191
+      ],
+      "thread_rng_seed": 1089473361
+    },
+    {
+      "thread_url": "https://www.smogon.com/forums/threads/usage-based-tier-update-for-january-2025-february-50-march-65.3757491/",
+      "thread_title": "Data Usage-Based Tier Update for January 2025 (February @ #50) (March @ #65)",
+      "thread_type": "Council",
+      "tier": "Other",
+      "is_recent": true,
+      "total_posts_estimated": 100,
+      "pages_fetched": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "cached_pages": {
+        "1": {
+          "path": "cache_smogon_v2\\thread-d76b80d1b313-page-1.html",
+          "sha1": "eaa5c13587cf3e7e39ed3ce7bc38f86362b4f67d"
+        },
+        "2": {
+          "path": "cache_smogon_v2\\thread-d76b80d1b313-page-2.html",
+          "sha1": "4715dfb766c45ebbae9f894cb97571bbf164805c"
+        },
+        "3": {
+          "path": "cache_smogon_v2\\thread-d76b80d1b313-page-3.html",
+          "sha1": "8e78394d72eadcce4fd89f9924913266d2758c4c"
+        },
+        "4": {
+          "path": "cache_smogon_v2\\thread-d76b80d1b313-page-4.html",
+          "sha1": "707e1ea41f249bb4feac82da923eaf88b1ed9ff6"
+        }
+      },
+      "selected_indices_planned": [
+        1,
+        2,
+        3,
+        14,
+        19,
+        20,
+        23,
+        25,
+        26,
+        28,
+        33,
+        65,
+        73,
+        80,
+        96
+      ],
+      "selected_indices_written": [
+        1,
+        2,
+        3,
+        4,
+        6,
+        15,
+        23,
+        25,
+        33,
+        36,
+        40,
+        54,
+        63,
+        72,
+        75
+      ],
+      "thread_rng_seed": 3382649619
+    },
+    {
+      "thread_url": "https://www.smogon.com/forums/threads/tera-blast-suspect-test-%E2%80%94-qualified-discussion.3780489/",
+      "thread_title": "Tera Blast Suspect Test — Qualified Discussion",
+      "thread_type": "Council",
+      "tier": "OU",
+      "is_recent": true,
+      "total_posts_estimated": 14000,
+      "pages_fetched": [
+        1,
+        23,
+        96,
+        122,
+        145,
+        155,
+        164,
+        181,
+        238,
+        256,
+        261,
+        387,
+        484
+      ],
+      "cached_pages": {
+        "1": {
+          "path": "cache_smogon_v2\\thread-9a9804bb4c03-page-1.html",
+          "sha1": "98f2d881fb6fd90fa46ff04025668d9d92a9d2c9"
+        },
+        "23": {
+          "path": "cache_smogon_v2\\thread-9a9804bb4c03-page-23.html",
+          "sha1": "27a99ae99aeab1fe5b5820a2e2a1cc3dff8320bb"
+        },
+        "96": {
+          "path": "cache_smogon_v2\\thread-9a9804bb4c03-page-96.html",
+          "sha1": "8b3603b59f0c939bc047621b33e4401fbbd62344"
+        },
+        "122": {
+          "path": "cache_smogon_v2\\thread-9a9804bb4c03-page-122.html",
+          "sha1": "c1fb362e35c735f16f0448c48467d536de073bf9"
+        },
+        "145": {
+          "path": "cache_smogon_v2\\thread-9a9804bb4c03-page-145.html",
+          "sha1": "06113c17c216418f88ebaded005be5a229cd27a7"
+        },
+        "155": {
+          "path": "cache_smogon_v2\\thread-9a9804bb4c03-page-155.html",
+          "sha1": "a16ecb532bbd381dbc187b7efa47cb3caa03a39d"
+        },
+        "164": {
+          "path": "cache_smogon_v2\\thread-9a9804bb4c03-page-164.html",
+          "sha1": "401811deb1388304e7437b044dc3cfc37204b8db"
+        },
+        "181": {
+          "path": "cache_smogon_v2\\thread-9a9804bb4c03-page-181.html",
+          "sha1": "d1a61521378c77a2cc87e18184aa23c9e314990b"
+        },
+        "238": {
+          "path": "cache_smogon_v2\\thread-9a9804bb4c03-page-238.html",
+          "sha1": "6c0afc6cd13c2339ab9c7c5a831cd29fd7e7d755"
+        },
+        "256": {
+          "path": "cache_smogon_v2\\thread-9a9804bb4c03-page-256.html",
+          "sha1": "0d62d5f80ac8609ffff447e23bd49092ddeaac16"
+        },
+        "261": {
+          "path": "cache_smogon_v2\\thread-9a9804bb4c03-page-261.html",
+          "sha1": "2cc1f7129b0b8d9eba4c2740bdab583de3b93392"
+        },
+        "387": {
+          "path": "cache_smogon_v2\\thread-9a9804bb4c03-page-387.html",
+          "sha1": "d5ddabd01edaf106afee020839390fccd2b89f15"
+        },
+        "484": {
+          "path": "cache_smogon_v2\\thread-9a9804bb4c03-page-484.html",
+          "sha1": "6e732e77a414ccb142c4569008fdff79150d7793"
+        }
+      },
+      "selected_indices_planned": [
+        1,
+        2,
+        3,
+        569,
+        2394,
+        3033,
+        3622,
+        3867,
+        4087,
+        4518,
+        5931,
+        6393,
+        6506,
+        9654,
+        12087
+      ],
+      "selected_indices_written": [
+        1,
+        2,
+        3,
+        5,
+        9,
+        12,
+        19,
+        27,
+        36,
+        42,
+        69,
+        70,
+        71,
+        77,
+        81
+      ],
+      "thread_rng_seed": 664990332
+    },
+    {
+      "thread_url": "https://www.smogon.com/forums/threads/usage-based-tier-update-for-january-2023-ru-having-fun.3713705/",
+      "thread_title": "Data Usage-Based Tier Update for January 2023 (RU having fun?)",
+      "thread_type": "Council",
+      "tier": "Lower tiers",
+      "is_recent": false,
+      "total_posts_estimated": 75,
+      "pages_fetched": [
+        1,
+        2,
+        3
+      ],
+      "cached_pages": {
+        "1": {
+          "path": "cache_smogon_v2\\thread-53345e847b5f-page-1.html",
+          "sha1": "7a566be86063eee8c41a4a9a7139702f2cb7266a"
+        },
+        "2": {
+          "path": "cache_smogon_v2\\thread-53345e847b5f-page-2.html",
+          "sha1": "471dd575b78e44787e4e58253904e391749ea778"
+        },
+        "3": {
+          "path": "cache_smogon_v2\\thread-53345e847b5f-page-3.html",
+          "sha1": "f57767fbe96008cab89fa2a2b850344a20cada5c"
+        }
+      },
+      "selected_indices_planned": [
+        1,
+        2,
+        3,
+        4,
+        11,
+        17,
+        29,
+        32,
+        37,
+        39,
+        45,
+        48,
+        51,
+        56,
+        69
+      ],
+      "selected_indices_written": [
+        1,
+        2,
+        3,
+        4,
+        13,
+        15,
+        18,
+        19,
+        35,
+        37,
+        38,
+        42,
+        56,
+        57,
+        59
+      ],
+      "thread_rng_seed": 2396907009
+    },
+    {
+      "thread_url": "https://www.smogon.com/forums/threads/usage-based-tier-update-for-february-2023-nu-on-the-menu.3715407/",
+      "thread_title": "Data Usage-Based Tier Update for February 2023 (NU on the menu)",
+      "thread_type": "Council",
+      "tier": "Lower tiers",
+      "is_recent": false,
+      "total_posts_estimated": 50,
+      "pages_fetched": [
+        1,
+        2
+      ],
+      "cached_pages": {
+        "1": {
+          "path": "cache_smogon_v2\\thread-758c443fd6ad-page-1.html",
+          "sha1": "55c9b0ad86e489104d05f1bdee5242419df4263d"
+        },
+        "2": {
+          "path": "cache_smogon_v2\\thread-758c443fd6ad-page-2.html",
+          "sha1": "3ab7e8d41a1f9ba45ff0d80d66089a14b4aef18f"
+        }
+      },
+      "selected_indices_planned": [
+        1,
+        2,
+        3,
+        4,
+        7,
+        10,
+        22,
+        24,
+        25,
+        26,
+        28,
+        36,
+        37,
+        38,
+        48
+      ],
+      "selected_indices_written": [
+        1,
+        2,
+        3,
+        4,
+        7,
+        13,
+        17,
+        19,
+        20,
+        22,
+        29,
+        37,
+        39,
+        46,
+        48
+      ],
+      "thread_rng_seed": 3115351916
+    },
+    {
+      "thread_url": "https://www.smogon.com/forums/threads/usage-based-tier-update-for-february-2024.3735783/",
+      "thread_title": "Data Usage-Based Tier Update for February 2024",
+      "thread_type": "Council",
+      "tier": "Other",
+      "is_recent": false,
+      "total_posts_estimated": 100,
+      "pages_fetched": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "cached_pages": {
+        "1": {
+          "path": "cache_smogon_v2\\thread-8243d22e2603-page-1.html",
+          "sha1": "c5cf849a282697566b8795d19539ec637a78b751"
+        },
+        "2": {
+          "path": "cache_smogon_v2\\thread-8243d22e2603-page-2.html",
+          "sha1": "10adc75ab7308b67eff4d2aca058e28f964c1fcc"
+        },
+        "3": {
+          "path": "cache_smogon_v2\\thread-8243d22e2603-page-3.html",
+          "sha1": "d527d1e17434ca31335375c309e12bdd05c3b662"
+        },
+        "4": {
+          "path": "cache_smogon_v2\\thread-8243d22e2603-page-4.html",
+          "sha1": "a241233534ef229b11fe740149549a91162e3e54"
+        }
+      },
+      "selected_indices_planned": [
+        1,
+        2,
+        3,
+        4,
+        11,
+        14,
+        24,
+        29,
+        30,
+        45,
+        66,
+        68,
+        74,
+        86,
+        100
+      ],
+      "selected_indices_written": [
+        1,
+        2,
+        3,
+        9,
+        14,
+        19,
+        24,
+        41,
+        42,
+        43,
+        56,
+        57,
+        70,
+        78,
+        79
+      ],
+      "thread_rng_seed": 47906229
+    },
+    {
+      "thread_url": "https://www.smogon.com/forums/threads/sv-ou-forum-rules-ou-council-info-and-announcements.3710769/",
+      "thread_title": "Rules SV OU Forum Rules, OU Council Info, and Announcements",
+      "thread_type": "Council",
+      "tier": "OU",
+      "is_recent": false,
+      "total_posts_estimated": 100,
+      "pages_fetched": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "cached_pages": {
+        "1": {
+          "path": "cache_smogon_v2\\thread-f8cd02e00603-page-1.html",
+          "sha1": "2f395943fcda2c014aaf06dbe1399748eadd6cdb"
+        },
+        "2": {
+          "path": "cache_smogon_v2\\thread-f8cd02e00603-page-2.html",
+          "sha1": "7ffdd72eab623cce08fbfebab4b40714d1a3c070"
+        },
+        "3": {
+          "path": "cache_smogon_v2\\thread-f8cd02e00603-page-3.html",
+          "sha1": "66110578dce989f6cceb38123af4fcde362d1f12"
+        },
+        "4": {
+          "path": "cache_smogon_v2\\thread-f8cd02e00603-page-4.html",
+          "sha1": "f19e18ab1133585b49e79d8114db8b0b82c69a9e"
+        }
+      },
+      "selected_indices_planned": [
+        1,
+        2,
+        3,
+        12,
+        13,
+        22,
+        27,
+        35,
+        69,
+        89,
+        92,
+        95,
+        96,
+        97,
+        99
+      ],
+      "selected_indices_written": [
+        1,
+        2,
+        3,
+        11,
+        12,
+        15,
+        20,
+        28,
+        34,
+        39,
+        44,
+        55,
+        64,
+        67,
+        78
+      ],
+      "thread_rng_seed": 3761460345
+    },
+    {
+      "thread_url": "https://www.smogon.com/forums/threads/usage-based-tier-update-for-march-2023-an-aroma-of-pu.3717197/",
+      "thread_title": "Data Usage-Based Tier Update for March 2023 (an aroma of PU)",
+      "thread_type": "Council",
+      "tier": "Lower tiers",
+      "is_recent": false,
+      "total_posts_estimated": 50,
+      "pages_fetched": [
+        1,
+        2
+      ],
+      "cached_pages": {
+        "1": {
+          "path": "cache_smogon_v2\\thread-d771e2f33920-page-1.html",
+          "sha1": "6a64b237a3b4263471c2cffd0ccbed620ec63303"
+        },
+        "2": {
+          "path": "cache_smogon_v2\\thread-d771e2f33920-page-2.html",
+          "sha1": "096bcc6cd70a74c5b4700e13df740ee3ee5224b8"
+        }
+      },
+      "selected_indices_planned": [
+        1,
+        2,
+        3,
+        4,
+        6,
+        20,
+        22,
+        23,
+        28,
+        31,
+        36,
+        37,
+        38,
+        42,
+        44
+      ],
+      "selected_indices_written": [
+        1,
+        2,
+        3,
+        4,
+        6,
+        10,
+        12,
+        13,
+        17,
+        20,
+        23,
+        24,
+        26,
+        29,
+        33
+      ],
+      "thread_rng_seed": 3871218246
+    },
+    {
+      "thread_url": "https://www.smogon.com/forums/threads/ou-solgaleo-metagame-discussion.3775713/",
+      "thread_title": "Metagame OU + Solgaleo Metagame Discussion",
+      "thread_type": "Viability",
+      "tier": "OU",
+      "is_recent": true,
+      "total_posts_estimated": 150,
+      "pages_fetched": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "cached_pages": {
+        "1": {
+          "path": "cache_smogon_v2\\thread-74af2b7e4b4c-page-1.html",
+          "sha1": "d722b685a72bb9760e9a5637418aeff68d2dc59c"
+        },
+        "2": {
+          "path": "cache_smogon_v2\\thread-74af2b7e4b4c-page-2.html",
+          "sha1": "b9273fb2486eeca1df0e27205cbdf4697985bf85"
+        },
+        "3": {
+          "path": "cache_smogon_v2\\thread-74af2b7e4b4c-page-3.html",
+          "sha1": "1c8893e004e675f1ae45767c4245f0ca8181099d"
+        },
+        "4": {
+          "path": "cache_smogon_v2\\thread-74af2b7e4b4c-page-4.html",
+          "sha1": "2d00d5fe6569757cab5ea8fe024d14cda6229eba"
+        },
+        "5": {
+          "path": "cache_smogon_v2\\thread-74af2b7e4b4c-page-5.html",
+          "sha1": "c3d4f4b225545f35a7b5055c2b276962db7f753f"
+        },
+        "6": {
+          "path": "cache_smogon_v2\\thread-74af2b7e4b4c-page-6.html",
+          "sha1": "84dc5d7aaa9ea14d5edf1cb47950ca22cbe02d09"
+        }
+      },
+      "selected_indices_planned": [
+        1,
+        2,
+        3,
+        17,
+        36,
+        42,
+        48,
+        73,
+        80,
+        91,
+        112,
+        114,
+        132,
+        144,
+        147
+      ],
+      "selected_indices_written": [
+        1,
+        2,
+        3,
+        10,
+        26,
+        38,
+        53,
+        59,
+        63,
+        65,
+        74,
+        92,
+        93,
+        120,
+        140
+      ],
+      "thread_rng_seed": 3127772561
+    },
+    {
+      "thread_url": "https://www.smogon.com/forums/threads/metagame-research-center-mrc-ubers.3775337/",
+      "thread_title": "Project Metagame Research Center (MRC) - Ubers",
+      "thread_type": "Viability",
+      "tier": "Other",
+      "is_recent": true,
+      "total_posts_estimated": 12,
+      "pages_fetched": [
+        1
+      ],
+      "cached_pages": {
+        "1": {
+          "path": "cache_smogon_v2\\thread-86c815e2ff2f-page-1.html",
+          "sha1": "d04f23741980d6eee680b8f9a4caa4cdb50d6d42"
+        }
+      },
+      "selected_indices_planned": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "selected_indices_written": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "thread_rng_seed": 3967563654
+    },
+    {
+      "thread_url": "https://www.smogon.com/forums/threads/champions-ou-regulation-m-c-viability-rankings.3782737/",
+      "thread_title": "Resource Champions OU Regulation M-C Viability Rankings",
+      "thread_type": "Viability",
+      "tier": "OU",
+      "is_recent": true,
+      "total_posts_estimated": 100,
+      "pages_fetched": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "cached_pages": {
+        "1": {
+          "path": "cache_smogon_v2\\thread-6bf9b2313600-page-1.html",
+          "sha1": "75cf0639898f1aa2157e5570b59d21c3e9ce7663"
+        },
+        "2": {
+          "path": "cache_smogon_v2\\thread-6bf9b2313600-page-2.html",
+          "sha1": "b1a19106b367caafaa95a0b394888af6f60d8e16"
+        },
+        "3": {
+          "path": "cache_smogon_v2\\thread-6bf9b2313600-page-3.html",
+          "sha1": "3b93508846a1a1bf175dd848e858aadcb941e83e"
+        },
+        "4": {
+          "path": "cache_smogon_v2\\thread-6bf9b2313600-page-4.html",
+          "sha1": "4091dc6a370c8bb52876ce714532674f82ea2013"
+        }
+      },
+      "selected_indices_planned": [
+        1,
+        2,
+        3,
+        7,
+        33,
+        49,
+        55,
+        57,
+        59,
+        64,
+        66,
+        82,
+        86,
+        90,
+        96
+      ],
+      "selected_indices_written": [
+        1,
+        2,
+        3,
+        7,
+        9,
+        13,
+        18,
+        26,
+        48,
+        50,
+        51,
+        56,
+        61,
+        77,
+        81
+      ],
+      "thread_rng_seed": 1566130273
+    },
+    {
+      "thread_url": "https://www.smogon.com/forums/threads/sv-uu-metagame-discussion-the-indigo-disk.3733541/",
+      "thread_title": "Metagame SV UU Metagame Discussion - The Indigo Disk",
+      "thread_type": "Viability",
+      "tier": "Lower tiers",
+      "is_recent": false,
+      "total_posts_estimated": 850,
+      "pages_fetched": [
+        1,
+        3,
+        4,
+        9,
+        11,
+        18,
+        20,
+        28,
+        33,
+        34
+      ],
+      "cached_pages": {
+        "1": {
+          "path": "cache_smogon_v2\\thread-fbe51c09c456-page-1.html",
+          "sha1": "8e35154bb03d0ae95095a4413794a79ba4789a2f"
+        },
+        "3": {
+          "path": "cache_smogon_v2\\thread-fbe51c09c456-page-3.html",
+          "sha1": "e5bcab58eb227467b6daa3655038d911f7b79fa5"
+        },
+        "4": {
+          "path": "cache_smogon_v2\\thread-fbe51c09c456-page-4.html",
+          "sha1": "e365ba958bf1d559a34ada39fa667164d3d232b6"
+        },
+        "9": {
+          "path": "cache_smogon_v2\\thread-fbe51c09c456-page-9.html",
+          "sha1": "d32497e4bc6f46d8d66421ac215e13b904e54b4c"
+        },
+        "11": {
+          "path": "cache_smogon_v2\\thread-fbe51c09c456-page-11.html",
+          "sha1": "a0dc3219b1255d9f9c8cacb66891d1eb63b52f99"
+        },
+        "18": {
+          "path": "cache_smogon_v2\\thread-fbe51c09c456-page-18.html",
+          "sha1": "009392d33a3d07f9d34b4a45d7541a0d9d10de84"
+        },
+        "20": {
+          "path": "cache_smogon_v2\\thread-fbe51c09c456-page-20.html",
+          "sha1": "927ab7d4773be1249aa65f75f57bfe1ce8156d5d"
+        },
+        "28": {
+          "path": "cache_smogon_v2\\thread-fbe51c09c456-page-28.html",
+          "sha1": "d2b703ed19585ea378e6e498fd69298b2d75ff82"
+        },
+        "33": {
+          "path": "cache_smogon_v2\\thread-fbe51c09c456-page-33.html",
+          "sha1": "b8a185901d79503934b3ca674f75f31f981b5006"
+        },
+        "34": {
+          "path": "cache_smogon_v2\\thread-fbe51c09c456-page-34.html",
+          "sha1": "8325c4127d71388aeb5e62eab1534e3c0e0d1930"
+        }
+      },
+      "selected_indices_planned": [
+        1,
+        2,
+        3,
+        14,
+        73,
+        85,
+        223,
+        269,
+        428,
+        433,
+        482,
+        483,
+        692,
+        825,
+        847
+      ],
+      "selected_indices_written": [
+        1,
+        2,
+        3,
+        45,
+        58,
+        80,
+        99,
+        104
+      ],
+      "thread_rng_seed": 3446786707
+    }
+  ]
+}

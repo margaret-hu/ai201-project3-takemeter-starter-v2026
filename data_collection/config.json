@@ -1,0 +1,20 @@
+{
+  "home": "https://www.smogon.com/forums/",
+  "keywords": ["council", "viability", "metagame", "doubles", "vgc", "ou", "uu", "ru", "nu", "pu", "monotype", "ubers", "1v1"],
+  "target": 200,
+  "target_threads": 28,
+  "type_props": {"Council": 0.35, "Viability": 0.35, "Community": 0.30},
+  "tier_props": {"OU": 0.30, "Doubles/VGC": 0.20, "Lower tiers": 0.25, "Other": 0.25},
+  "recent_share": 0.5,
+  "raw_per_thread": 15,
+  "min_thread_posts": 12,
+  "forum_pages": 3,
+  "anonymize": false,
+  "output": "smogon_posts.jsonl",
+  "cache_dir": "cache_smogon",
+  "manifest": "sample_manifest.json",
+  "seed": 123,
+  "force": false,
+  "headless": true,
+  "verbose": false
+}

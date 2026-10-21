@@ -108,23 +108,25 @@ The tone is annoyed, but the argument rests on a named matchup (Treads vs. heatw
 <!-- Where you collected from, how you labelled, your counts, and three hard
      cases. -->
 
-**Where the posts came from:** 200 public posts from the Smogon competitive Pokemon forums, collected with a script (Playwright plus BeautifulSoup) in [`data_collection/`](data_collection/). The scraper ([`smogon_scraper.py`](data_collection/smogon_scraper.py)) samples threads by type, tier and age and skips off-topic ones. A filter ([`inscope.py`](data_collection/inscope.py)) and [`subsample.py`](data_collection/subsample.py) then keep posts that can take one of the three labels and draw the final 200. They came from 12 threads, mostly tier-update threads, so the dataset leans toward tier-shift discussion. [`labels_ids.csv`](labels_ids.csv) records the post ID and permalink for every row of [`labels.csv`](labels.csv).
+**Where the posts came from:** 225 public posts from 18 threads on the Smogon competitive Pokemon forums, collected with a script (Playwright plus BeautifulSoup) in [`data_collection/`](data_collection/). A filter ([`inscope.py`](data_collection/inscope.py)) keeps only posts that can take one of the three labels. The first 200 came from 12 threads, mostly tier-update threads, so the set leans toward tier-shift discussion. I added 25 posts from 6 other thread types (viability rankings, metagame discussion, suspect tests, council) to widen it. [`labels_ids.csv`](labels_ids.csv) records the post ID and permalink for every row of [`labels.csv`](labels.csv).
+
+**How the 225 were assembled:** The final set isn't the output of one scraper run. I scraped Smogon threads in several rounds, changing the plan between rounds. The scripts and [`sampling_plan.md`](data_collection/sampling_plan.md) in `data_collection/` show the tooling and the intended design, and `sample_manifest.json` records only one of those runs (it covers 54 of the final 225 posts). Each round gave a pool of posts that passed the `inscope.py` filter. Claude Code then suggested candidates from those pools, and I kept the ones that gave variety across threads, tiers, years, and the three labels. Because the selection was partly AI-suggested rather than random, the dataset isn't a random sample of Smogon posts, and the per-label counts reflect which posts were chosen.
 
 **How I labelled them:** I labelled in an interactive session with Claude Code, and `labels_ids.csv` records how each row was labelled:
 
 - **20 posts cold.** I labelled these myself before seeing any AI suggestion.
-- **180 posts pre-labelled by Claude Code.** I reviewed every one. I agreed with 172, so they keep the AI's label, and I changed the label on 8 (`corrected` in `labels_ids.csv`). Of the 8, the AI had said `analysis` for 4, `hot_take` for 3 and `chatter` for 1.
+- **205 posts pre-labelled by Claude Code.** I reviewed only the calls Claude flagged as unsure (see How I Used AI). I changed the label on 13 (`corrected` in `labels_ids.csv`): the AI had said `hot_take` for 6, `analysis` for 4 and `chatter` for 3. The other 192 keep the AI's label.
 
-Because 172 labels are the AI's judgment that I accepted, the model is partly learning Claude's reading of my label definitions.
+Because 192 labels are the AI's judgment that I kept, most of them unreviewed, the model is partly learning Claude's reading of my label definitions.
 
 **Counts per label:**
 
 | Label | Count | Share |
 |---|---|---|
-| `analysis` | 54 | 27.0% |
-| `hot_take` | 61 | 30.5% |
-| `chatter` | 85 | 42.5% |
-| **Total** | 200 | 100% |
+| `analysis` | 66 | 29.3% |
+| `hot_take` | 68 | 30.2% |
+| `chatter` | 91 | 40.4% |
+| **Total** | 225 | 100% |
 
 **Three hard cases**
 
