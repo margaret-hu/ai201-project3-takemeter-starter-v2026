@@ -216,18 +216,23 @@ No label falls below 8 in the test split, but 10 posts per label is still small.
 
 | Measure | Baseline | Trained | Difference |
 |---|---|---|---|
-| Overall accuracy |  |  |  |
-| Macro F1 |  |  |  |
-| F1 — `label_one` |  |  |  |
-| F1 — `label_two` |  |  |  |
+| Overall accuracy | 0.324 | 0.588 | +0.265 |
+| Macro F1 | 0.225 | 0.483 | +0.258 |
+| F1 — `analysis` | 0.439 | 0.526 | +0.087 |
+| F1 — `hot_take` | 0.000 | 0.167 | +0.167 |
+| F1 — `chatter` | 0.235 | 0.757 | +0.521 |
+
+Both models were scored on the same 34 posts in `test_split.csv`, seed 42.
 
 **What I predicted before I looked:**
 <!-- Milestone 1 asks you to write this BEFORE seeing the trained numbers. A
      prediction made afterwards isn't one. -->
+I had seen the trained results (accuracy 0.588, macro F1 0.483) but no baseline numbers. I predict the baseline scores 0.45–0.55 accuracy. It should beat the trained model on `hot_take` (1 of 10 correct), since zero-shot reads my definition directly instead of learning from 157 noisy examples. I expect the trained model to keep its edge on `chatter`. I expect the baseline's weakest spot to be `analysis` vs. `hot_take`, the boundary I called noisiest.
 
 **What the gap actually means:**
 <!-- If the baseline matched your trained model, your fine-tuning added
      nothing — and that is a real finding, not a failure. Say it plainly. -->
+My prediction was mostly wrong. The baseline scored 0.324 accuracy, below my 0.45–0.55 range and below the 0.404 you get by always guessing `chatter`. The trained model beat it on every measure, including `hot_take`, where I expected the baseline to win. The baseline predicted `analysis` for about 31 of 34 posts and never predicted `hot_take`, so zero-shot with my definitions can't separate my labels, and fine-tuning added real signal (+0.26 accuracy). The one gap I wouldn't trust is `analysis` (+0.087), which is less than one post's worth of F1 on 34 posts.
 
 
 

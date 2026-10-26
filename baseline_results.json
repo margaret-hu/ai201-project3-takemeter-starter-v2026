@@ -1,0 +1,204 @@
+{
+  "model": "facebook/bart-large-mnli",
+  "n": 34,
+  "seed": 42,
+  "held_out": true,
+  "used_definitions": true,
+  "scores": {
+    "n": 34,
+    "accuracy": 0.3235294117647059,
+    "f1_macro": 0.22477283596365374,
+    "per_label": {
+      "analysis": {
+        "precision": 0.2903225806451613,
+        "recall": 0.9,
+        "f1": 0.4390243902439024,
+        "support": 10
+      },
+      "chatter": {
+        "precision": 0.6666666666666666,
+        "recall": 0.14285714285714285,
+        "f1": 0.23529411764705882,
+        "support": 14
+      },
+      "hot_take": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 10
+      }
+    }
+  },
+  "predictions": [
+    {
+      "text": "ILoveGarchom said: View attachment 828874 Its over the dream is dead Click to expand... You know what this means? My boy Cinderace is permanently OU!",
+      "gold": "chatter",
+      "predicted": "analysis"
+    },
+    {
+      "text": "UU lost 2 of the fastest relevant pokemon in the tier in exchange for the 2 fastest relevant pokemon in the tier",
+      "gold": "hot_take",
+      "predicted": "analysis"
+    },
+    {
+      "text": "congratulations Theia",
+      "gold": "chatter",
+      "predicted": "analysis"
+    },
+    {
+      "text": "idk why B- rank NU like 2026's Monferno and Staraptor (BL forever mon) aren't dropping...",
+      "gold": "hot_take",
+      "predicted": "analysis"
+    },
+    {
+      "text": "Also, losing Slowbro sucks for NDUU",
+      "gold": "chatter",
+      "predicted": "analysis"
+    },
+    {
+      "text": "SnackWasTaken said: Now I have proof that Basculegion is overrated Basculegion is overrated Basculegion is overrated Basculegion is overrated Come on, it even fell to UU. That's gotta say something, right? Click to expand... usage is not viability, my friend. It is still viable for OU, just not used enough to be OU.",
+      "gold": "hot_take",
+      "predicted": "analysis"
+    },
+    {
+      "text": "i think suspecting drago is fine but at least wait a tour pls (wc) also i feel like some of the points ppl have made are not well thought out: not the same metagame but i mean you can have healthy mons that are impossible or hard to lure (ss zera, ss cress) steels and faries will always be good pokemon, and idt drago is single handedly changing how ppl build their teams to an extent, but if you have mons as good as prim and gross and corv and val (that historically have been and still are good without drago) (and beat many pokemon outside of drago) idt the logic is sound saying drago forces these mons on every team when they already have high usage independant of drago's nature. the 5050 previews argument i feel like is dumbing down the previews. i think it is easy to to tunnel vision on drago on preview and that is why people are scared of it. but in reality there are other factors in play on preview such as the other pokemon on your and your opponents team, and the many sets all of those pokemon can run. for example, drago vs mons like landot, walking wake, raging bolt or meowscarada are not an auto win for every regidrago set. also these clicking 5050s on preview i believe are an inherent part of 1v1, and drago just being an extension of that may not be that bad for the tier. Kala chasmah said: 5. Too Powerful Click to expand... vague statement, also i feel like in practice drago isnt that strong hitting? it often sacrifices either bulk for power or power for bulk as seen in scarf sets vs haban sets etc. Kala chasmah said: 6. Speculating again and again what set it can be every single match isn't right (same like gouging, archa and oger-hearth) Click to expand... doesnt this counteract the 'you have to bring faries and steels to beat it cuz nothing else beats it' point like what Kala chasmah said: 3. Boring meta Click to expand... we just banned gouging just wait a bit and be patient imo, things dont happen magically overnight. no tldr >:)",
+      "gold": "analysis",
+      "predicted": "analysis"
+    },
+    {
+      "text": "god this is stinky",
+      "gold": "chatter",
+      "predicted": "analysis"
+    },
+    {
+      "text": "very nice stuff to wake up to, thanks everyone who voted for Isaiah's custom avatar some of the nominated avatars weren't actually made this year, so I wanted to share a few of my favourite custom avatars from 2022 rbtt5teamshaymin, made by sharpclaw ( art thread ) wcop2022uswest, made by Brumirage ( art thead ) fcl10samurotts, by Brumirage as well blt9snorlaxes, made by the incredible Loulonlou (aka Grapo, art thread here ) Sulo 's custom avatar, made by ZacWeavile ( art thread ) and the ones I made that I liked the most!! rbtt6teampalkia also thanks for the other nominations, (mainly the retirement one, I swear I'm leaving at some point) see, it's not that bad",
+      "gold": "chatter",
+      "predicted": "chatter"
+    },
+    {
+      "text": "Lillith Plays said: How does Barraskewda drop directly to RU? Click to expand... It was in RU previously before rising to OU by usage.",
+      "gold": "analysis",
+      "predicted": "analysis"
+    },
+    {
+      "text": "Quaq avoids destroying UU yet again. That mon would literally obliterate anything not named Gyarados in UU. Admittedly I don't know why its so low, its so good on shed tail teams and pex is slowly getting worse in OU and may drop after the next shift. Also Armarouge is OU? Cetitan is NU too with a hail setter to boot? Yikes that mon sounds nightmarish down there!",
+      "gold": "hot_take",
+      "predicted": "analysis"
+    },
+    {
+      "text": "SinnohEevee said: Why that many drops? Click to expand... Pokemon Home came out a few months ago. All Home Pokemon are still trickling down until they actually hit the tier that fits them the most.",
+      "gold": "analysis",
+      "predicted": "analysis"
+    },
+    {
+      "text": "t44Torkoal said: Ttar needs his time back in UU man. The hippo will appreciate coming back to RU Click to expand... At the same time, he's the OU goat of all time (other than Zapdos ofc)",
+      "gold": "hot_take",
+      "predicted": "analysis"
+    },
+    {
+      "text": "My entire playthrough team is now in UU",
+      "gold": "chatter",
+      "predicted": "analysis"
+    },
+    {
+      "text": "Pokemon Trainer: Shadow said: Did anyone ever think Iron Treads is ya know... good? And that's why it's still OU? Click to expand... Got hyped for 2 days when Eleki existed and people still think could compite with Tusk, Lando and Thing Lu",
+      "gold": "hot_take",
+      "predicted": "analysis"
+    },
+    {
+      "text": "Ttar in RU is a sign of the heat death of the universe",
+      "gold": "chatter",
+      "predicted": "analysis"
+    },
+    {
+      "text": "Heres my personal take based on what I've seen in the meta so far. Volc and new volc(Gouging fire) are degen matchup fishes that have no place in the game, but nothing else feel too overwhelming honestly. Maybe kyurem, that guy is also really fishy but he has more answers because he gets walled by more mons than just unaware ones. Meta right now is super polarized between bulky balance/semi-stall and HO, mostly because bulky offense can't handle the two best mons in the game(and kyurem low key). They are too tanky and find setup opportunities on offensive mons too often. Edit: I probably should have put latias higher if anyone is getting stored power banned its this guy",
+      "gold": "hot_take",
+      "predicted": "analysis"
+    },
+    {
+      "text": "timeflow said: the op has since been edited, araq is indeed dropping straight to nu for the reason that you cited later on in the thread Click to expand... Rip visual",
+      "gold": "chatter",
+      "predicted": "analysis"
+    },
+    {
+      "text": "Marty said: Thwackey moved from NU to PU Click to expand... Thwackey moved in reality from NU to NFE Also Comfey drop with 4.49% of usage. Make NU Happy, they needs Comfey...",
+      "gold": "analysis",
+      "predicted": "analysis"
+    },
+    {
+      "text": "Canard said: IT HAPPENED View attachment 775637 Click to expand... We deliver as promised. See you next shifts!",
+      "gold": "chatter",
+      "predicted": "analysis"
+    },
+    {
+      "text": "Why is Slowbro on some personal VRs (and even higher than its Johtonian cousin)? The lack of a pivoting move feels crippling to its viability in modern OUs.",
+      "gold": "hot_take",
+      "predicted": "analysis"
+    },
+    {
+      "text": "bp actually winning something",
+      "gold": "chatter",
+      "predicted": "analysis"
+    },
+    {
+      "text": "If Ceruledge, which was considered a bad mon in OU, just dropped to UU, that means Iron Threads can also drop to UU in another tier update",
+      "gold": "hot_take",
+      "predicted": "analysis"
+    },
+    {
+      "text": "I think as a shock to no one tera is insanely broken I don't think it's worth considering any other ban until tera is gone. u could ban the 20 best abusers and it would still be uncomp unbalanced garbage. every mon has access to amazing mono-types (water fairy steel ground stand out as especially nonsense) which makes not only clicking but even in-game a complete guessing game. banning booster energy and tera blast probably helps but marginally you don't really solve the core issue that good mons can just suddenly disregard the type chart. this meta looks really fun, I can't wait to play it after tera. I pray we hold off on any tiering action until tera is gone because that obviously has a drastic affect on any other potential ban.",
+      "gold": "hot_take",
+      "predicted": "analysis"
+    },
+    {
+      "text": "My boy Baxcalibur has finally made its comeback to OU, glad to see it. Hydreigon made its way into OU as well, pleasant surprise there. Armarouge moving up is surprising though. The drops don't seem all that interesting for the lower tiers though tbh aside from Kilowattrel in RU. Grimmsnarl and Scizor in UU on the other hand I will say is going to be quite a sight.",
+      "gold": "chatter",
+      "predicted": "analysis"
+    },
+    {
+      "text": "Heatranator said:\r\nCalm Mind: This I think is the best set, and its honestly pretty powerful. CM+2a with morning sun is pretty busted behind screens, as its able to trade exceedingly well at worst, while being an incredibly sweeper. The best attacking moves I think are flame+psychic move. The only mons that can beat you are ttar and ting lu. The latis have to specifically be trick to beat you, otherwise they are just setup fodder. Heatran just loses to you behind screens, even if it is taunt (you get to +2 then proc wp, which then makes sure that psyshock 2hkos while heatran does jack). Hamu has to be specifically AV, otherwise it doesn't do enough back and +3 flame 2hkos it. Hydreigon has to be NP otherwise it just loses lol, and gren just does jack to you. Ttar only beats you if its roar spdef, otherwise it literally just loses to you and ting lu isn't too hard to overwhelm by overloading it with stuff like goltres while flame does chunk it a decent amount if they proc wp (which if they wwind without proccing, then it gets chipped and potentially burned, which is ruinious). Psychic stab depends, I prefer psyshock to beat opposing cm mons while psychic can help against dozo and shit. But really, this mon just trades insanely well, at worst, 1v1 trades with something, but typically either trades 1v2 or sweeps. You can swap out flame for focus blast, which makes you a lot better against the darks, but worsens your mu into ghold and psychics while having to be focus blast.\r\nTLDR: Mons broken, stop using tport on non tr teams, run banded and cm, mixed LO is prob also fine.\r\nClick to expand...\r\nI want to focus on this part, since I don't think any of the other sets have a case for being broken. What exactly makes solg different from something like CM crown behind screens lmao? Yeah its bulkier but not by that much and giving up stored power is not a positive trade imo. We know screens is broken, so you should focus more on why solg is broken imo (especially because solg nerfs screens imo since its a actually viable psyfangs user)\r\nAlso: Sunsteel strike is good, band sets and most 3a morning sun sets have room for it and it provides a strong neutral hit on a ton, bypassing dnite multiscale is huge too",
+      "gold": "analysis",
+      "predicted": "analysis"
+    },
+    {
+      "text": "Marty said: Beedrill-Mega moved from NDUU to NDRU Click to expand... At long last, i don't have to clown on this pokemon now",
+      "gold": "chatter",
+      "predicted": "analysis"
+    },
+    {
+      "text": "garchomp is eternal. LIKE DOOM (sorry, stupid joke) also, giratina-o has seen a lot of ubers usage, compared to last gen breloom finally fell. finnaly, a good effing spore pokemon also, luxray is on a roll also, hoopa, Torn-i and bliss in NU, WTF",
+      "gold": "chatter",
+      "predicted": "analysis"
+    },
+    {
+      "text": "Fr, look at my thousand dollar contributions: 2021 2022 Jokes aside, your art is amazing daylight. Undeniable that you make some of the best art for the site",
+      "gold": "chatter",
+      "predicted": "chatter"
+    },
+    {
+      "text": "Ok since D tier right now is tier slop & should just be removed I have some additions for the lower ranks!\r\n- Houndstone\r\nUR -> C+\r\n- Ok houndstone is honestly not terrible, ghost stab is super good & it can threaten the common darks with Play Rough/Body Press. It has utility in Will-O-Wisp as well to pressure Corviknight and Hippowdon and when yuo equip a Spell Tag on it you can two shot Clefable with Poltergeist which is neat. Also provides some speed control on Sand teams where you can outspeed Scarfers.\r\nTeam:\r\nReplays:\r\nhttps://replay.pokemonshowdown.com/gen9championsou-2694427385-1cuwqux5nu3198mq2gq6c8fd3xvht94pw\r\n- Espathra: B-\r\n-> B=\r\n- Espathra is a very cheesy mon but it can be a very threatening sweeper apart from using chud sneasler. If you have a Pokemon that can threaten or heavily damage kingambit such as Dragapult or Glimmora then you can easily snow ball the game. Dazzling Gleam at +1 can OHKO darks most notably Hisuian Samurott and loads of Pokemon can be set up on for instance Primarina and Corviknight. With Grassy Seed you can survive priority like Sucker Punch Samurott-Hisui and Cinderace and Shadow Sneask Mega Absol Z.\r\nTeam:\r\nReplays:\r\nhttps://replay.pokemonshowdown.com/gen9championsou-2695726148-j7lfptd79spm4pv27fqc46xat0mekobpw\r\nhttps://replay.pokemonshowdown.com/gen9championsou-2695730695-dsrt0nchrxpmo15envs26j92t8d5qkypw\r\nhttps://replay.pokemonshowdown.com/gen9championsou-2695101635-shy5x7sw5kcr5ljyramilk0jmei7kr2pw\r\nhttps://replay.pokemonshowdown.com/gen9championsou-2695643404-qmnl4arttm6a3y099vxiq2ee4u9p4ahpw\r\n- Thievul\r\nUR -> B=\r\nThievul is the best unburden user. It has insane coverage, Burning Jealousy for Mega Golisopod and Kingambit, Psychic for Sneasler, Grass Knot for Hisuian Samurott and Primarina. Thievul truely is the best Pokemon in history.\r\nTeam:\r\nReplays:\r\nhttps://replay.pokemonshowdown.com/gen9championsou-2691828166-e6isxxf2j15r7hxi678v30qw7gv7pfbpw\r\nhttps://replay.pokemonshowdown.com/gen9championsou-2688199206-dwihtdrt5fwcyw6dj9w6koye30svvmupw\r\nhttps://replay.pokemonshowdown.com/gen9championsou-2688668487-ueile3y3n8c9u9qgxkgejw81u61ynq1pw\r\nhttps://replay.pokemonshowdown.com/gen9championsou-2688257027-jtk50whqog4377ll5hoambv463ssy2ipw",
+      "gold": "analysis",
+      "predicted": "chatter"
+    },
+    {
+      "text": "mrextrazy said: imo hurricane is much better if you want to run 3 attacks, it still beats encore+disable valiant albeit less reliably, but shadow ball doesn't really hit any other target. The only ones I found where shadow ball is the best click are diancie, klefki and tinkaton and you still lose to all of them: Diancie +3 52 SpA Moltres-Galar Shadow Ball vs. 252 HP / 148+ SpD Diancie: 87-103 (28.6 - 33.8%) -- 0.5% chance to 3HKO 0 Atk Diancie Diamond Storm vs. 252 HP / 56 Def Moltres-Galar: 222-264 (57.8 - 68.7%) -- guaranteed 2HKO Klefki https://replay.pokemonshowdown.com/gen91v1-1960915533 Tinkaton 252+ Atk Tinkaton Play Rough vs. 252 HP / 56 Def Moltres-Galar: 230-272 (59.8 - 70.8%) -- guaranteed 2HKO +3 52 SpA Moltres-Galar Shadow Ball vs. 176 HP / 80 SpD Tinkaton: 135-159 (38 - 44.7%) -- guaranteed 3HKO And Hurricane does more damage than shadow ball to even resisted targets anyway. Hurricane helps in a lot of matchups like scarf meowscarada and overall having strong stab option on a pokemon that wants to take a hit and ohko in return is really nice, plus with 30% confusion chance you can try to hax in a losing game. Also your ev spread is not optimal, your nature should always raise the highest stat. Here's how you can get 24 extra evs and still hit your benchmarks: Moltres-Galar Ability: Berserk Tera Type: Dark EVs: 248 HP / 56 Def / 172 SpA / 32 SpD Calm Nature Here's guide on eving if you want to learn more: https://docs.google.com/presentation/d/1Snxhe13qfZFqn_kO8eUG3BMwwfmVGRSNGuFpPqkjFDQ/edit?usp=sharing Click to expand... did i just get out-set built on my own set but seriously, i usually just prefer shadow ball since hurricane is inaccurate. ofc the confusion chance is nice but imo the flinch chance on air slash is superior, and the fallback utility of shadow ball is imo more useful than gambling on a 70% hit with hurricane in most scenarios i'm in. ig it kinda comes down to preference since ofc tinkaton, klefki, and diancie all have their own counters (corv/skeledirge). or if you really want double stab but dont want hurricane you could use dark pulse as well but idk how i feel abt that. i've also been thinking about potentially running agility over sb but i havent gotten around to it. (also thanks for making the evs better idk how to ev things)",
+      "gold": "analysis",
+      "predicted": "analysis"
+    },
+    {
+      "text": "Was arguing about sleep powder in 1v1cord but ill put this here because why not The two sleep powder users do not rely on sleep turns for most of their matchups Both Jumpluff and viv run sub + lefties + sleep powder, basically nullifying sleep turns, as even a turn one wake will just result in an attack into a substitute into a resleep(unless miss haha) oh but encore/taunt users can get haxed by sleep turns waahh Out of the viable encorers:skeledirge, valiant, ape, azu(stretch), donphan(stretch) 3 of them already win(dirge valiant ape), and while the other 2 can run encore, its far from mandatory that they do so For viable taunt users(ting lu, corvi, great tusk), while they all can run taunt, specific sets are still walled(bpress corvi, bulk up taunt ) which leaves ting lu other counterargument about the move being broken because haha tiering policy its the move thats the problem not the mon: serene grace was uncompetitive last gen but you banned jirachi instead of serene grace(oh but iron head is a stab move /dt meteor mash) (yes i know rachi could run encore spower but who cares nerd emoji also yall literally say its not based off t he mon ok fine rachi sucks as an example but who cares im leaving it fuck you) togekiss was also aids and even then serene grace stayed despite the fact that sg enables scarf/maranga kiss to be absolute hell If you argue that sleep is uncompetitive no matter the mon but serene grace on kiss is fine idk man both viv and toge rely on their stats/movepool to use sleep powder and sgrace as well as they do(viv relies on its decent speed and movepool, toge is obvious) Both serene grace and sleep powder have examples of shitmons like chansey, venomoth, etc if it isnt related to the mon then ban serene grace and if it does depend on the mon then sleep powder is mostly competitive in practice so no real reason to ban it also ape suspect w cindy coming back mid suspect is hella scuffed what the fuck push it back",
+      "gold": "analysis",
+      "predicted": "analysis"
+    },
+    {
+      "text": "StompyStomps said: i am a shockbro myself, but how the fuck did sandy shocks have higher usage than THUNDUROUS THERIAN?!?!?!?!!?! Click to expand... -Setting up hazards -Actually has really good qualities being part of the hazards metagame like being a special attacker for Glimmora and Great Tusk, being electric for Samurott-H and Corviknight, and having Earthpower for Gholdango -Bulk it very noticeably larger -Has Protosynthesis and it fast enough to outspeed unboosted metagame",
+      "gold": "analysis",
+      "predicted": "analysis"
+    },
+    {
+      "text": "Isn't Terrakion supposed to be moving from RU to NUBL instead of NU? It was banned from NU in January 2024 and it rose from NUBL to RU in February 2024. Edit : I got informed that NUBL was freed in March 2024 so Terrakion should indeed drop to NU, no mistake",
+      "gold": "analysis",
+      "predicted": "analysis"
+    }
+  ]
+}
