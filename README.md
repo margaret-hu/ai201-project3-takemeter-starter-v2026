@@ -245,28 +245,26 @@ My prediction was mostly wrong. The baseline scored 0.324 accuracy, below my 0.4
 
 | Criterion | Target | Seed 42 | Seed 7 | Seed 2024 | Verdict |
 |---|---|---|---|---|---|
-| 1.  |  |  |  |  |  |
-| 2.  |  |  |  |  |  |
-| 3.  |  |  |  |  |  |
-| 4.  |  |  |  |  |  |
-| 5.  |  |  |  |  |  |
+| 1. `analysis` F1 | ≥ 0.55 on all three seeds | 0.526 | 0.692 | 0.750 | MISSED (seed 42) |
+| 2. `hot_take` F1 | ≥ 0.55 on all three seeds | 0.167 | 0.400 | 0.000 | MISSED (all three) |
+| 3. `chatter` F1 | ≥ 0.75 on all three seeds | 0.757 | 0.889 | 0.765 | MET |
+| 4. Overall accuracy | ≥ 0.65 on all three seeds | 0.588 | 0.706 | 0.647 | MISSED (seeds 42 and 2024) |
+| 5. Agreement with staff set | ≥ 23 of 30 (77%) | 30 / 30 (100%) | n/a | n/a | MET |
+
+Accuracy spread across seeds was 0.118, over the 10-point line, so the stability note flags the dataset as too small or lopsided for a stable measure. Device: CPU, torch 2.14.1+cpu.
 
 ### Confusion matrix
 
-<!-- ⚠️ TYPED AS A MARKDOWN TABLE. The notebook prints one ready to paste.
-     An image of a matrix earns nothing. -->
+Seed 42, 34 test posts.
 
-| true \ predicted |  |  |  |
+| true \ predicted | analysis | hot_take | chatter |
 |---|---|---|---|
-| **** |  |  |  |
-| **** |  |  |  |
-| **** |  |  |  |
+| **analysis** | 5 | 1 | 4 |
+| **hot_take** | 4 | 1 | 5 |
+| **chatter** | 0 | 0 | 14 |
 
 **My biggest off-diagonal number, and what it means:**
-<!-- Not "the model made mistakes" — WHICH boundary it didn't learn, and which
-     direction. "7 real analysis posts were called hot_take and only 3 went the
-     other way" is a direction, not just an error rate. -->
-
+5 real `hot_take` posts were called `chatter` and 0 went the other way, so the model never learned to separate a hot take from a post with no claim and defaults to `chatter`, its biggest class.
 
 
 ---
