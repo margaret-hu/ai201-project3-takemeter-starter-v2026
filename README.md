@@ -383,11 +383,13 @@ Two limits on the comparison. Adding rows reshuffles every split, so the after-n
 
 `hot_take` is rare in this forum under my definition: only 14 of 89 candidates I reviewed for the improvement qualified, and most of the rest were `analysis`. Collecting the other 16 would need a different method than a keyword shortlist.
 
+**Criteria 1, 3 and 4 (`analysis` F1, `chatter` F1, accuracy) are missed, and I caused it.** The extra `hot_take` rows taught the model to call opinionated `analysis` posts `hot_take` (6 of 10 on seed 42), which pulled down `analysis`, then `chatter` on seed 2024, then accuracy (0.611, 0.611, 0.583). I would add `analysis` rows that cite numbers but still read as opinion, so the model sees both sides of the Rule 1 boundary. I stopped because every added row reshuffles the 36-post test set, and I can't tell a real gain from noise without a fixed one.
 
+**Criterion 2 (`hot_take` F1) is met but fragile.** It clears 0.55 by about one post on two seeds, and the 14 added posts were hand-picked, so a fresh `hot_take` set would be the fair test.
 
 **The gap between what I meant my labels to capture and what the model
 learned:**
-<!-- Two sentences. Your confusion matrix is the evidence. -->
+I meant `hot_take` to be a claim with no checkable support, and `analysis` a claim whose numbers or reasons carry the conclusion. The model learned something closer to "opinionated tone means `hot_take`": the seed 42 matrix shows 10 of 12 `hot_take` right but 6 of 10 `analysis` called `hot_take`.
 
 
 
