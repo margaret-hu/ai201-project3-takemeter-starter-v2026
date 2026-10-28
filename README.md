@@ -305,7 +305,7 @@ Seed 42, 34 test posts.
      data/staff_taxonomy.md, not your own — so every argument below is made
      from those definitions and those decision rules. -->
 
-**Agreement rate:** ___ / 30 = ___%
+**Agreement rate:** 30 / 30 = 100%
 
 <!-- Nobody grades this number. A 60% who argues every disagreement from the
      stated rules beats a 95% who wrote "staff was right" nine times. Several
@@ -327,25 +327,12 @@ Seed 42, 34 test posts.
      written rule two different ways on 30 posts, that is direct evidence about
      what you did across your own 200. -->
 
-**1.**
-> *The post:*
->
-> *Staff said / I said:*
->
-> *My call, and why:*
->
-> *Which pile:*
+There were none: all 30 labels matched, including the 7 posts staff marked as borderline on purpose. My labels are in `data/my_staff_labels.csv`, so the check ran as `python agreement.py --mine data/my_staff_labels.csv`.
 
-**2.**
-> *The post:*
->
-> *Staff said / I said:*
->
-> *My call, and why:*
->
-> *Which pile:*
+The clearest of the hard calls was Rule 1. "Times are down about 3% since the shoe rules changed, so obviously..." is `hot_take`, because "so obviously" does the work and the 3% is decoration. "My times dropped 2% in the shoes and another 2% in the same pair..." is `analysis`, because the numbers are the reason for the conclusion.
 
 **What the pattern in my disagreements tells me:**
+No disagreements, so no pile (a) evidence of applying a rule inconsistently. That covers only 30 posts under staff's taxonomy, and staff's `reaction` is not my `chatter`, so it says nothing about my `chatter` boundary. It makes a labelling problem a weaker explanation for the `hot_take` misses than too few examples or a boundary the model can't learn from this much data.
 
 
 
