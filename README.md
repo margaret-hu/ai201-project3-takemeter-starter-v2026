@@ -392,6 +392,28 @@ learned:**
 I meant `hot_take` to be a claim with no checkable support, and `analysis` a claim whose numbers or reasons carry the conclusion. The model learned something closer to "opinionated tone means `hot_take`": the seed 42 matrix shows 10 of 12 `hot_take` right but 6 of 10 `analysis` called `hot_take`.
 
 
+---
+
+## Stretch Items
+
+I am attempting one stretch item: **a per-label error write-up**. I wrote this declaration after running the script that produced its numbers, so it is not a before-the-build declaration.
+
+### Stretch: a per-label error write-up (`hot_take`)
+
+**What this item is and what it changed:** a written analysis of the worst label in the Run Log — Before matrix. It changes no data, labels, settings or results. It adds [`error_analysis.py`](error_analysis.py) and its output [`error_analysis_before_predictions.csv`](error_analysis_before_predictions.csv), because the notebook saves only counts. The script retrains the 225-row "before" model on all three seeds and saves each test post's guess and confidence. It reproduces the logged numbers, and this covers the "before" model, not the one trained on the 14 added posts.
+
+`hot_take` is the worst label on all three seeds (F1 0.167, 0.400, 0.000). On seed 42 it got 1 of 10 right, and I read the 9 misses: 5 went to `chatter` and 4 to `analysis`.
+
+**Called `chatter` (5).** These read like banter: three open with a quoted reply, and the rest have slang or exclamations ("idk why...", "Yikes", "the OU goat of all time"). Each still claims something about the game, but casually. My `chatter` definition includes jokes and hype, so the model is reading tone while my `hot_take` rule is about content.
+
+**Called `analysis` (4).** These look like arguments: they name Pokemon and tiers, use numbers ("2 of the fastest relevant pokemon") and connectives ("that means", "mostly because"), and two run 119 and 133 words. By my rule none has support someone else could check.
+
+**What they have in common.** All 9 are opinions with no checkable support, and the model goes by how they sound. It had 48 `hot_take` training posts to learn a label defined by something absent. That is my hypothesis, not something this analysis tests. Confidence on the misses was 0.34 to 0.43, close to the 0.33 of a three-way guess.
+
+**Which label it is confused with.** Not one label. Over the three seeds, 26 of 30 test `hot_take` posts were missed: 14 went to `analysis` and 12 to `chatter`. The direction changes with the split (to `analysis`/`chatter`: 4/5 on seed 42, 6/1 on seed 7, 4/6 on seed 2024).
+
+**Caveat.** Two of the four `analysis` misses are posts where I changed Claude's pre-label ("If Ceruledge ... that means Iron Threads can also drop" was `analysis`). A tier-update outcome could count as checkable under my own definition, so some of the "confusion" may be label noise.
+
 
 <!-- ═════════════════════════════════════════════════════════════════════
 
