@@ -349,23 +349,29 @@ No disagreements, so no pile (a) evidence of applying a rule inconsistently. Tha
 ## The Improvement
 
 **What I changed:**
+I added 14 `hot_take` posts to `labels.csv` (rows 227–240, `added` in `labels_ids.csv`), taking it from 225 rows to 239 and `hot_take` from 68 to 82. I had planned 30. I labelled 89 candidates from unused posts in `pool_inscope.jsonl` under my existing definitions and kept only the 14 `hot_take`. Nothing else changed: same definitions, training settings and seeds, on CPU.
 
 **Which diagnosis pointed at it:**
+Criterion 2: "a hard label pair plus too little data". `hot_take` had 48 training posts and F1 of 0.167, 0.400 and 0.000.
 
 ### Run Log — After
 
 | Criterion | Target | Seed 42 | Seed 7 | Seed 2024 | Verdict |
 |---|---|---|---|---|---|
-| 1.  |  |  |  |  |  |
-| 2.  |  |  |  |  |  |
-| 3.  |  |  |  |  |  |
-| 4.  |  |  |  |  |  |
-| 5.  |  |  |  |  |  |
+| 1. `analysis` F1 | ≥ 0.55 on all three seeds | 0.167 | 0.500 | 0.333 | MISSED (all three; before: seed 42 only) |
+| 2. `hot_take` F1 | ≥ 0.55 on all three seeds | 0.645 | 0.562 | 0.562 | MET (before: MISSED) |
+| 3. `chatter` F1 | ≥ 0.75 on all three seeds | 0.759 | 0.750 | 0.714 | MISSED (seed 2024; before: MET) |
+| 4. Overall accuracy | ≥ 0.65 on all three seeds | 0.611 | 0.611 | 0.583 | MISSED (all three; before: seeds 42 and 2024) |
+| 5. Agreement with staff set | ≥ 23 of 30 (77%) | 30 / 30 | n/a | n/a | MET (carried over, not re-run: this change doesn't touch the staff set) |
+
+Accuracy spread across seeds fell from 0.118 to 0.028. Test set is now 36 posts, not 34.
 
 **Did it help, and how do I know:**
+It fixed the criterion I aimed at and made the model worse overall. `hot_take` F1 clears 0.55 on all three seeds, but by only 0.012 on two of them, about one post. `analysis` F1 fell on every seed (0.526 → 0.167, 0.692 → 0.500, 0.750 → 0.333), `chatter` slipped under its target on seed 2024, and mean accuracy went down (0.647 → 0.602) while mean macro F1 stayed flat (0.549 → 0.555). One criterion gained, two lost.
 
-<!-- If it didn't, say so. Relabelling that didn't help is a genuinely
-     interesting result and earns full credit. -->
+The seed 42 confusion matrix shows why: 6 of 10 `analysis` posts were called `hot_take`. The model learned to say `hot_take` more often, which raised `hot_take` recall to 10 of 12 and cost the other labels.
+
+Two limits on the comparison. Adding rows reshuffles every split, so the after-numbers are on different test posts (36, with 12 `hot_take`), not the same 34. And I picked the 14 because they looked like hot takes, so they are probably easier than a typical `hot_take`, and 14 is half of what I planned.
 
 
 
@@ -374,6 +380,8 @@ No disagreements, so no pile (a) evidence of applying a rule inconsistently. Tha
 ## What's Still Broken
 
 <!-- For each criterion still missed: what you'd do, and why you stopped. -->
+
+`hot_take` is rare in this forum under my definition: only 14 of 89 candidates I reviewed for the improvement qualified, and most of the rest were `analysis`. Collecting the other 16 would need a different method than a keyword shortlist.
 
 
 
