@@ -276,13 +276,21 @@ Seed 42, 34 test posts.
 
 | # | Criterion | Target | Verdict | How I decided |
 |---|---|---|---|---|
-| 1 |  |  |  |  |
-| 2 |  |  |  |  |
-| 3 |  |  |  |  |
-| 4 |  |  |  |  |
-| 5 |  |  |  |  |
+| 1 | `analysis` F1 | ≥ 0.55 on all three seeds | MISSED | 0.526, 0.692, 0.750. Seed 42 is under by 0.024. |
+| 2 | `hot_take` F1 | ≥ 0.55 on all three seeds | MISSED | 0.167, 0.400, 0.000. Under on every seed. |
+| 3 | `chatter` F1 | ≥ 0.75 on all three seeds | MET | 0.757, 0.889, 0.765. Lowest seed clears it by 0.007. |
+| 4 | Overall accuracy | ≥ 0.65 on all three seeds | MISSED | 0.588, 0.706, 0.647. Seed 2024 is 22 of 34 right, 0.647, just under. |
+| 5 | Agreement with staff set | ≥ 23 of 30 | MET | 30 / 30. |
 
 **Diagnoses**
+
+**Criterion 2 (`hot_take`): a hard label pair plus too little data.** Recall was 0.1, 0.3 and 0.0, and the misses go to `chatter` or `analysis` depending on the seed, so the model hasn't learned a stable boundary. `hot_take` is defined by what is absent (no checkable support), and 48 training posts isn't enough to learn that. The agreement report makes a labelling problem less likely: 30 of 30 with staff, including 7 borderline posts. It can't rule one out: my `hot_take` wording is looser than staff's decorative-fact rule, 192 of my 225 labels are Claude's judgment that I accepted, and two of the four seed 42 misses called `analysis` were posts where I changed Claude's pre-label.
+
+**Criterion 1 (`analysis`): test-set noise.** Only seed 42 failed, by one post. I'm not lowering the target.
+
+**Criterion 4 (accuracy):** the miss is `hot_take` dragging accuracy down. The 0.118 spread says 34 test posts is too few for a stable measure.
+
+**Criteria 3 and 5 (met).** `chatter` holding tells me little: it is my largest label, and staff's `reaction` is not my `chatter`, so the agreement check can't vouch for it.
 
 <!-- For each miss: the cause, and how you know. The four common causes are:
      too few examples for a label, a boundary you applied inconsistently, a
